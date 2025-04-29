@@ -1,0 +1,157 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #A7BEAE;
+    color: #333;
+}
+/* 1. Apply these styles to body and html */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 2. Make main content take available space */
+body > header,
+body > section {
+    flex: 1;
+}
+
+/* 3. Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:#B85042;
+    color: white;
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #B85042;
+    color: white;
+}
+
+/* Search Section */
+.search-section {
+    text-align: center;
+    margin: 20px;
+}
+
+#ingredient-input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    background-color:#B85042;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#search-btn:hover {
+    background-color: #B85042;
+}
+
+/* Recipe Cards Grid */
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.recipe-card {
+    background-color: #E7E8D1;
+    border-radius: 9px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 290px;
+    justify-content: space-between;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.recipe-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Buttons */
+.view-btn {
+    padding: 8px 15px;
+    background-color:#B85042;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.view-btn:hover {
+    background-color: #B85042;
+}
+
+/* Single Recipe Details */
+.recipe-details-container {
+    padding: 30px;
+}
+
+.recipe-details-container img {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.recipe-details-container h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.recipe-details-container p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.back-btn {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 10px;
+    text-align: center;
+    background-color:#B85042;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    background-color:#B85042;
+}
+
