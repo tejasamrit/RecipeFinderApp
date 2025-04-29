@@ -1,4 +1,4 @@
-const apiKey = "3f98c843415c4b158fd98724afbb83d4"; // Replace with your real API key
+const apiKey = "your_api_key"; // Replace with your real API key
 const recipeDetailsContainer = document.getElementById('recipe-details');
 
 async function fetchRecipeDetails(id) {
